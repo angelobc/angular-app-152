@@ -1,0 +1,20 @@
+<table class="table is-striped is-hoverable is-bordered is-fullwidth">
+    <thead>
+        <tr >
+            <th *ngFor="let title of titles">{{title | titlecase }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.detail}}</td>
+            <td>{{product.price | currency : 'S/ ' }}</td>
+            <td>{{product.stock}}</td>
+            <td>
+                <a style="margin-right: 10px;" [routerLink]="['./products', product.id]" class="button is-small is-info">Editar</a>
+                <button class="button is-danger button is-small" (click)=removeProduct(product.id)>Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
