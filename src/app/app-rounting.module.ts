@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { SignInComponent } from './modules/login/sign-in/sign-in.component';
 import { ProductsComponent } from './modules/admin/products/products.component';
+import { ProductEditComponent } from './modules/admin/product-edit/product-edit.component';
 
 const routes : Routes = [
     {
@@ -18,7 +19,7 @@ const routes : Routes = [
     },
     {
         path: 'admin/products/:id',
-        component: ProductsComponent
+        component: ProductEditComponent
     },
     {
         path: '',
