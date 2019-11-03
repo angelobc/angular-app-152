@@ -1,3 +1,4 @@
+<a [routerLink]="['./new']" class="button is-small is-info">NuevoProducto</a>
 <table class="table is-striped is-hoverable is-bordered is-fullwidth">
     <thead>
         <tr >
@@ -12,7 +13,7 @@
             <td>{{product.price | currency : 'S/ ' }}</td>
             <td>{{product.stock}}</td>
             <td>
-                <a style="margin-right: 10px;" [routerLink]="['./products', product.id]" class="button is-small is-info">Editar</a>
+                <a style="margin-right: 10px;" [routerLink]="['./', product.id]" class="button is-small is-info">Editar</a>
                 <button class="button is-danger button is-small" (click)=removeProduct(product.id)>Eliminar</button>
             </td>
         </tr>
