@@ -9,19 +9,23 @@ import { ProductNewComponent } from './product-new/product-new.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { AdminComponent } from './admin.component';
 import { AdminRoutingModule } from './admin-rounting.module';
+import { ProductFormComponent } from './product-form/product-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 const components = [
   HeaderComponent, 
   FooterComponent,
   ProductsComponent,
   ProductNewComponent,
   ProductEditComponent,
-  AdminComponent
+  AdminComponent,
+  ProductFormComponent
 ];
 
 @NgModule({
   declarations: [...components],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     AdminRoutingModule
   ],
   providers: [ProductService]
