@@ -23,11 +23,8 @@ const components = [
 
 @NgModule({
   declarations: [...components],
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    AdminRoutingModule
-  ],
+  imports: [CommonModule,ReactiveFormsModule,AdminRoutingModule],
+  exports: [...components],
   providers: [ProductService]
 })
 export class AdminModule { }

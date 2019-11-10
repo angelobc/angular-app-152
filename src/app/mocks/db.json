@@ -21,5 +21,22 @@
       "stock": 4,
       "id": 103
     }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "name": "Ivan",
+      "surname": "Rosales",
+      "email": "ivan.rosales@gmail.com",
+      "password": "4ngul4r8"
+    },
+    {
+      "id": 2,
+      "name": "Juan",
+      "surname": "Torres",
+      "email": "j.torres@gmail.com",
+      "password": "4ngul4r8"
+    }
   ]
 }
